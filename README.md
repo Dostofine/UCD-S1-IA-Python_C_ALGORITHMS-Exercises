@@ -1,46 +1,28 @@
-# S1 – IA UCD | Algorithms, Python & C
+# UCD S1 - Informatique Appliquée
+## Séries d'exercices et Examens | 2025 - 2026
 
-This repository contains **Semester 1 (S1)** exercises, series, simulations,
-and exams for the **IA – UCD** program.
-
-It covers **Algorithms, Python, and C programming** for the academic year
-**2025–2026**.
+Ce dépôt regroupe les ressources pédagogiques du **Semestre 1 (S1)** pour la filière **Informatique Appliquée** à l'**Université Chouaib Doukkali (UCD)**, incluant les modules **Python**, **C** et **Algorithmique**.
 
 ---
 
-## 📂 Repository Structure
-
-- `LES_SERIE_S1_IA_FS_ALGO_PYTHON_C/`  
-  Series of exercises in Algorithms, Python, and C.
-
-- `LES_EXAMENS/`  
-  Exam subjects and exam exercises with solutions.
-
-- `AUTRES/`  
-  Additional materials such as simulations,and extra exercises.
+### 📌 Contenu
+- **Séries d'exercices** : Travaux dirigés pour pratiquer les concepts clés.  
+- **Annales d'examens** : Sujets des années précédentes pour s'exercer en conditions réelles.  
+- **Corrections** : Solutions détaillées pour faciliter l'apprentissage et la révision.
 
 ---
 
-## 🎯 Purpose
+### 🛠️ Technologies utilisées
+- **Langages** : Python 3.x, C  
+- **Environnements de développement recommandés** : VS Code, Vim ou tout autre IDE de votre choix.
 
--This repository is intended for:
+---
 
- IA / Computer Science students
+### 📂 Structure du projet
+-/Exercices -> Séries de TP/TD
+-/Examens -> Sujets types et examens passés
 
- Semester 1 revision
+---
 
- Practicing Algorithms, Python, and C
-
- Exam preparation
-
-## ⚠️ Disclaimer
-
--These solutions are provided for educational purposes only.
-Students are encouraged to try solving the exercises before checking solutions.
-
-
-## 👤 Author
-
-Ilyas Et-Thabity
-IA – UCD
-Academic Year: 2025–2026
+### 🔧 Mainteneur
+Ce projet est maintenu par **Ilyas Et-Thabity (Dostofine)**.
