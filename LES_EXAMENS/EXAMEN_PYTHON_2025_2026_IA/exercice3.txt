@@ -1,0 +1,22 @@
+        algorithme_suites
+variables U0,U1,Un_1,Un:reel
+          n,i:entier
+debut
+    faire
+        ecrire("saisir un entier n>=0: ")
+        lire(n)
+    tant que(n<0)
+    U0<-1
+    U1<-7
+    si n=0 alors 
+         ecrire(U0)
+    sinon
+        Un_1<-U1
+        ecrire(U0)
+        ecrire(U1)
+        pour i allant de 2 a n faire
+            Un<-5*Un_1+2
+            ecrire(Un)
+            Un_1<-Un 
+        fin pour
+fin

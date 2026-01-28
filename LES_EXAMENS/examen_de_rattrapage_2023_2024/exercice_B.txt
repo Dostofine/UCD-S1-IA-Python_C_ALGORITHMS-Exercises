@@ -1,0 +1,24 @@
+        algorithme_calculatrice
+variables N1,N2:reel
+          operation:caractere
+debut
+    ecrire("saisir les deux nombres: ")
+    lire(N1,N2)
+    faire
+        ecrire("saisir une des les operation suivant {+,-,/,*}: ")
+        lire(operation)
+    tant que (operation != "+" et operation != "-" et operation != "/" et operation != "*")
+    si operation ="+" alors
+        ecrire(N1,"+",N2,"=",N1+N2)
+    sinon si operation ="-" alors
+        ecrire(N1,"-",N2,"=",N1-N2)
+    sinon si operation ="*" alors
+        ecrire(N1,"*",N2,"=",N1*N2)
+    sinon si operation ="/" alors
+        si N2!=0 faire
+            ecrire(N1,"/",N2,"=",N1/N2)
+        sinon
+            ecrire("math error!")
+        finsi
+    finsi
+fin

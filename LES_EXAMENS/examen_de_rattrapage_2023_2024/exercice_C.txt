@@ -1,0 +1,16 @@
+       algoritghme_series
+variables n,i:entier
+          X,sn:reel
+debut
+    faire
+        ecrire("saisir un entier n>0: ")
+        lire(n)
+    tant que(n<=0)
+    ecrire("saisir une reel X: ")
+    lire(X)
+    sn<-0
+    pour i allant de 1 a n faire
+        sn<-sn+i*X^i
+    fin pour
+    ecrire("sn=",sn)
+fin

@@ -1,0 +1,27 @@
+Variables k, nb : entier
+Début
+Lire(nb)
+Pour k allant de 1 à nb faire
+Ecrire(k)
+FinPour
+Fin
+==================================
+Variables k, nb : entier
+Début
+    Lire(nb)
+    k<-1
+    repeter
+        Ecrire(k)
+        k<-k+1
+    jusqu'a k=nb
+Fin
+======================================
+Variables k, nb : entier
+Début
+    Lire(nb)
+    k<-1
+    tant que(k!=nb) faire
+        Ecrire(k)
+        k<-k+1
+    Fin tant que
+Fin

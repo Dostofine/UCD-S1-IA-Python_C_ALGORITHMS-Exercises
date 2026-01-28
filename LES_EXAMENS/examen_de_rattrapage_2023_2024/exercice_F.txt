@@ -1,0 +1,48 @@
+F- Tableaux 1D
+8) Ecrire un algorithme qui lit un tableau de taille n (n<l00) de réels positifs,
+9) Cherche et affiche la valeur minimale du tableau (min), et la valeur maximale (max)
+10) Normalise toute les valeurs du tableau en les ramenant entre )et l, de telle façon que le plus grand d'entre eux soit égal d l,et le plus petit à zéro. Pour faire cela, à chaque €lément du
+tableau il faut soustraire le min et ensuite diviser par (max-min):
+Exemple: Sile tableaulu est T[3]={ 20.0, 10.0, 30.0 }
+Letableau normalisé est TN[3] :{0.5 ,0.0, 1.0 }.
+========================================================================
+========================================================================
+        algorithme_tableau_1d
+variables i:entier
+          n,min,max,divis:reel
+          Tableau T[99]:reel
+debut
+    //saisir le tableau de n reel
+    faire
+        ecrire("saisir un entier n<100: ")
+        lire(n)
+    tant que(n>=100 ou n<0)
+    pour i allant de 1 a n faire
+        ecrire("saisir le reel numero ",i," : ")
+        lire(T[i])
+    fin pour
+    //chairche et affiche min et max
+    min<-T[1]
+    max<-T[1]
+    pour i allant de 2 a n faire
+        si T[i]>max alors
+            max<-T[i]
+        fin si
+        si T[i]<min alors
+            min<-T[i]
+        fin si
+    fin pour
+    ecrire("la valeur min du tableau est : ",min)
+    ecrire("la valeur max du tableau est : ",max)
+    //Normalise toute les valeurs du tableau 0-1
+    divis<-max-min
+    pour i allant de 1 a n faire
+        T[i]<-T[i]/divis
+    fin pour
+    ecrire("{")
+    pour i allant de 1 a n faire
+        ecrire(" ",T[i]," ")
+    fin pour
+    ecrire("}")
+fin
+

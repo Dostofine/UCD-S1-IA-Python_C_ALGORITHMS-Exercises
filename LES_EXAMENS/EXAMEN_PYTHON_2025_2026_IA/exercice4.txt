@@ -1,0 +1,44 @@
+        algorithme_Tableau_1D
+variables i:entier
+          temp:reel
+          verifier:boolean
+          Tableau T[40]:reel
+debut
+    pour i allant de 1 a 40 faire
+        ecrire("saisir la note numero ",i)
+        lire(T[i])
+    fin pour
+    faire
+        verifier<-vrai 
+        pour i allant de 1 a 39 faire
+            si T[i]<T[i+1] alors
+                verifier<-faux 
+            fin si 
+        fin pour 
+        si verifier=faux 
+            pour i allant de 1 a 39 faire 
+                temp<-T[i]
+                T[i]<-T[i+1]
+                T[i+1]<-temp
+            fin pour 
+        fin si 
+    tant que(verifier=faux)
+    pour i allant de 1 a 40 faire 
+        si T[i]>=16 alors 
+            ecrire(" la note ",i," = ",T[i])
+            ecrire("la mention Tres bien") 
+        sinon si T[i]>=14 alors 
+            ecrire(" la note ",i," = ",T[i])
+            ecrire("la mention bien") 
+        sinon si T[i]>=12 alors 
+            ecrire(" la note ",i," = ",T[i])
+            ecrire("la mention Assez bien") 
+        sinon si T[i]>=10 alors la mention passable
+            ecrire(" la note ",i," = ",T[i])
+            ecrire("la mention passable")
+        sinon
+            ecrire(" la note ",i," = ",T[i])
+            ecrire("Ajourne")
+        fin si 
+    fin pour 
+fin

@@ -1,0 +1,13 @@
+        algorithme_permutation
+varaibles X,Y,Z,temp:entier 
+debut
+    ecrire("saisir 3 entiers X ,Y ,Z: ")
+    lire(X,Y,Z)
+    ecrire("avant la permetation: X=",X,"Y=",Y,"Z="Z)
+    temp=X
+    X=Z
+    Z=Y
+    X=Y
+    Y=temp
+    ecrire("apres la permetation: X=",X,"Y=",Y,"Z="Z)
+fin

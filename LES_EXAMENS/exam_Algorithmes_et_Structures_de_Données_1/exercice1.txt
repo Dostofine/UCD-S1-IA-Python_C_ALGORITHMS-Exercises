@@ -1,0 +1,29 @@
+Exercice 1 : (6 pts)
+On considère la suite numérique (Un) définie par :
+Un = 8Un−1 − 4Un−2 avec U1 = 4 et U2 = 2
+Écrire un algorithme qui calcule le n-ième terme de la suite (n ≥ 3).
+Remarque : Dans cet exercice, l'utilisation des tableaux n'est pas autorisée.
+=========================================================================================
+        Algorithme_suite_numerique
+variables n,i:entier
+          Un_2,Un_1,Un:reel
+debut
+    faire
+        ecrire("saisir un entier n≥3: ")
+        lire(n)
+    tant que(n<3)
+    ecrire("U(1)=",4)
+    ecrire("U(2)=",2)
+    Un_2=4
+    Un_1=2
+    pour i allant de 3 a n faire
+        Un<-(8*Un_2)−(4*Un_1)
+        ecrire("U(",i,")=",Un)
+        Un_2<-Un_1
+        Un_1<-Un
+    fin pour
+fin
+
+
+
+
