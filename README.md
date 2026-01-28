@@ -19,10 +19,17 @@ Ce dépôt regroupe les ressources pédagogiques du **Semestre 1 (S1)** pour la 
 ---
 
 ### 📂 Structure du projet
--/Exercices -> Séries de TP/TD
--/Examens -> Sujets types et examens passés
+Le dépôt est organisé comme suit :
+UCD-S1-Informatique-Appliquée/
+├─ Exercices/ # Séries de TP et TD pour chaque module
+├─ Examens/ # Sujets types et examens passés
+└─ README.md # Présentation du projet
+
+- **Exercices/** : Contient toutes les séries de travaux pratiques et dirigés.  
+- **Examens/** : Contient les sujets d’examens des années précédentes pour s’entraîner.
 
 ---
 
 ### 🔧 Mainteneur
+
 Ce projet est maintenu par **Ilyas Et-Thabity (Dostofine)**.
