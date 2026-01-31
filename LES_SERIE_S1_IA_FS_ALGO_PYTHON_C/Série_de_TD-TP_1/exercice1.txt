@@ -1,0 +1,27 @@
+====================================
+1) 5 * x + a + b / 4 =>reel
+2) 3 - x % y         =>error(L'opérateur % est normalement réservé aux entiers. )
+3) chaîne1 & chaîne2 =>chaîne de caractère
+4) Length ("Salut"& chaîne1) =>entier
+===================================
+        algorithme exercice_1
+Variables a, b : entier
+          x, y : réel
+          chaîne1, chaîne2 : chaîne de caractère
+          type_1:reel
+          type_3: chaîne de caractère
+          type_4:entier
+debut
+        ecrire("saisir les entier a et b : )
+        lire(a,b)
+        ecrire("saisir les reels x et y : )
+        lire(x,y)
+        ecrire("saisir les chaînes de caractère chaîne1 et chaîne2 : )
+        lire(chaîne1,chaîne2)
+        type_1<-5 * x + a + b / 4 
+        type3<-chaîne1 & chaîne2
+        type_4<-Length ("Salut"& chaîne1)
+        ecrire("type_1=",type_1,"et de type reel ")
+        ecrire("type_3=",type_3,"et de type chaîne de caractère ")
+        ecrire("type_1=",type_1,"et de type entier ")
+fin
