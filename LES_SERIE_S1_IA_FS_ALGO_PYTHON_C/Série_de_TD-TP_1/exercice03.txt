@@ -1,0 +1,16 @@
+===========================
+a.
+A=6
+B=2
+==========================
+b.
+A=13
+B=13
+C=13
+==========================
+C.
+A=2
+B=2
+=>Le problème reste:B prend d'abord la valeur de A(5),puis A prend cette valeur.
+À la fin, A = 5 et B = 5. Ce n’est pas un échange.
+===========================
