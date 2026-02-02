@@ -1,0 +1,14 @@
+===================================================
+Ecrire un algorithme qui permet d’échanger les valeurs de deux variables entiers A et B quel
+que soit leur contenu préalable.
+===================================================
+        algorithme_permetation
+variables A,B,temp:entiers
+debut
+    ecrire("saisir deux entier A et B: ")
+    lire(A,B)
+    temp<-A 
+    A<-B 
+    B<-temp 
+    ecrire("appres la permetation A=",A,"B=",B)
+fin

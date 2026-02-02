@@ -1,0 +1,29 @@
+
+On suppose déclarées deux variables entières x et y. On considère la séquence suivante :
+x<--x+y
+y<--x-y 
+x<--x-y
+1.Quelles sont les valeurs de x et y après l’exécution de la séquence sachant que les
+valeurs de x et y avant l’exécution de la séquence sont respectivement 5 et 12 ?
+
+=>Les valeurs après exécution des instructions sont respectivement : X=12 et y=5
+
+
+2.Pouvez-vous généraliser ?
+
+
+=>A la fin de la suite d’instructions, X vaut la valeur initiale de Y et Y vaut la valeur initiale
+de X. C’est une suite d’instructions qui nous permet d’échanger le contenu de deux variables.
+==============================================================================================
+                algorithme_exercice7 
+variables  X,Y:entier 
+debut 
+    ecrire("saisir deux entier X et Y : ")
+    lire("X,Y")
+    x<--x+y
+    y<--x-y 
+    x<--x-y
+    ecrire("appres les calcules ")
+    ecrire("X=",X)
+    ecrire("Y=",Y)
+fin

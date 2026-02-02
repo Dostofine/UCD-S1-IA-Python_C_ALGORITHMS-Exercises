@@ -1,0 +1,22 @@
+==================================================
+Exercice 6
+On dispose de trois variables entiers A, B et C. Ecrivez un algorithme transférant à B la valeur
+de A, à C la valeur de B et à A la valeur de C (toujours quels que soient les contenus préalables
+de ces variables).
+==================================================
+        algorithme_permetation_3_variables 
+variables A,B,C,temp:entier 
+debut 
+    ecrire("saisir 3 entier A , B , C: ")
+    lire(A,B,C)
+    temp<-A
+    A<-C 
+    C<-B 
+    B<-temp
+    ecrire("apres la permetation :")
+    ecrire("A=",A)
+    ecrire("B=",B)
+    ecrire("C=",C)
+fin
+
+

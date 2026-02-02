@@ -1,0 +1,14 @@
+=================================================
+Exercice 4
+Que produit l’algorithme suivant ?
+Variables A, B, C :chaine de Caractères
+Début
+A ← "423"
+B ← "12"
+C ← A & B
+Fin
+=>
+A="423"
+B="12"
+C="42312"
+==================================================
