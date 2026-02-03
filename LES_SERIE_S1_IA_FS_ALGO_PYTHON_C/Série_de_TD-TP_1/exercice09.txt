@@ -1,0 +1,20 @@
+Exercice 9
+Ecrire un algorithme qui lit 2 entiers et affiche le résultat de leur somme, soustraction, division,
+multiplication et modulo.
+================================================
+        Algorithme_des_operation_en_2_entier
+variables   N1,N2;entier
+debut
+    ecrire("saisir deux entier N1 et N2: ")
+    lire(N1,N2)
+    ecrire(N1," + ",N2," = ",N1+N2)
+    ecrire(N1," + ",N2," = ",N1-N2)
+    ecrire(N1," * ",N2," = ",N1*N2)
+    si N2!=0 alors 
+        ecrire(N1," / ",N2," = ",N1/N2)
+        ecrire(N1," % ",N2," = ",N1%N2)
+    sinon 
+        ecrire("la division sur 0 est invalide !")
+    finsi
+fin
+    

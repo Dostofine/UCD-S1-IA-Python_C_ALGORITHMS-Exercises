@@ -1,0 +1,24 @@
+Exercice 11
+Ecrire un algorithme qui demande les coordonnées de deux points dans le plan, calcule et
+affiche la distance entre ces deux points.
+Sachant que :
+La distance entre deux points A(x1,y1) et B(x2,y2) est :
+ AB= sqrt((x2-x1)^2 + (y2-y1)^2)
+==========================================
+        algorithme_la_distance
+variables X1,X2,Y1,Y2,D:reel
+debut
+    ecrire("saisir les coordonnées de A: ")
+    ecrire("saisir X1: ")
+    lire(X1)
+    ecrire("sasir Y1: ")
+    lire(Y1)
+    ecrire("saisir les coordonnées de B: ")
+    ecrire("saisir X2: ")
+    lire(X2)
+    ecrire("sasir Y2: ")
+    lire(Y2)
+    D<--racine((X2-X1)^2) + ((Y2-Y1)^2)
+    ecrire("la distance AB=",D)
+fin
+

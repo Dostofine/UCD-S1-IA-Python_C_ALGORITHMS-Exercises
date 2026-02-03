@@ -1,0 +1,15 @@
+Exercice 13
+Ecrire un algorithme qui permet de convertir un nombre de secondes en un nombre d’heures,
+de minutes et de secondes.
+Par exemple : 3710s est équivalente à : 1h 1min 50 s
+--------------------------------------------------
+        algorithme_convertir_un_nombre_de_secondes
+variables H,MIN,S,n:entier
+debut
+    ecrire("saisir le nombre de secondes : ")
+    lire(n)
+    H<-n/3600
+    MIN<-n%3600/60
+    S<-n%60
+    ecrire("le nombre de secondes ",n," :",H,"h",MIN,"min",S,"s")
+fin

@@ -1,0 +1,24 @@
+Exercice 8
+==============================================
+Quels résultats produit l’algorithme suivant ?
+==============================================
+        Algorithme_Calcul
+Variables
+         A : entier
+         C, B : réel
+         D : chaine de caractères
+         E : Booléen
+Début
+    A ← 30
+    B ← A * 2
+    Ecrire ("B=", B)
+    C ← (B + A)/4
+    B← C / 5
+    D ← "Amine"
+    E ← (A > 40) Ou (C < B)
+    Ecrire ("les valeurs obtenues sont : A = ", A , "B = ",B , " C = ", C , " D = ", D, "E = ", E)
+Fin
+===============================================
+=>les résultats produit est:
+B=60
+les valeurs obtenues sont : A = 30 , B = 4.5 , C = 22.5 , D =  Amine , E = Faux 

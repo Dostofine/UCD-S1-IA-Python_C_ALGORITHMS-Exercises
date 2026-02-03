@@ -1,0 +1,13 @@
+Exercice 10
+Donner l’algorithme qui permet de lire une chaîne de caractères et qui l’affiche ensuite en
+précisant sa longueur.
+=====================================
+        algorithme_long_chaine_de_caracteres 
+variables chaine:chaine de caractère 
+          long:entie
+debut
+    ecrire("saisir une chaine de caractere: ")
+    lire(chaine)
+    long<-longueur(chaine)
+    ecrire("la longueur de ",chaine,"est "," long")
+fin

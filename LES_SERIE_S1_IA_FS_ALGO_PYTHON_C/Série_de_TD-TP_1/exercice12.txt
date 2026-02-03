@@ -1,0 +1,28 @@
+
+Le surveillant général d’un établissement scolaire souhaite qu’on lui écrive un algorithme qui
+calcule pour chaque élève la moyenne des notes des cinq matières. Ces matières sont avec leur
+coefficient
+Math 5
+Physique 5
+Français 4
+Anglais 2
+Géographie 3
+=======================================
+        algorithme_la_moyenne
+variables M,PH,FR,AN,GEO,moyenne,somme:reel
+constantes C_M=5,C_PH=5,C_FR=4,C_AN=2,C_GEO=3
+debut
+    ecrire("sasir la note de Math: ")
+    lire(M)
+    ecrire("sasir la note de Physique: ")
+    lire(PH)
+    ecrire("sasir la note de Français: ")
+    lire(FR)
+    ecrire("sasir la note de Anglais: ")
+    lire(AN)
+    ecrire("sasir la note de Géographie: ")
+    lire(GEO)
+    somme<--M*C_M + PH*C_PH + FR*C_FR +AN*C_AN + GEO*C_GEO
+    moyenne<--somme/19
+    ecrire("le moyenne est:  ",moyenne)
+fin
