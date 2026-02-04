@@ -1,0 +1,16 @@
+Exercice 1
+Ecrire un algorithme qui demande un nombre à l’utilisateur et affiche un message indiquant si
+ce nombre est pair ou impair.
+===============================================
+        algorithme_Parité_d_un_nombre
+variables n,N:entier
+debut
+    ecrire("saisir un nombre entier n : ")
+    lire(n)
+    N<-n%2
+    si N=0 alors 
+        ecrire("le nombre ",n," est pair")
+    sinon
+        ecrire("le nombre ",n," est impair")
+    fin si 
+fin
