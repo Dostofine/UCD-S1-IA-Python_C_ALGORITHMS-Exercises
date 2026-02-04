@@ -1,0 +1,24 @@
+Exercice 2
+Écrire un algorithme qui, étant donné les coordonnées x et y d’un point, détermine dans quelle
+partie (A,B, C ou D) du plan se trouve le point .
+========================================================
+        algorithme_partie_du_plan
+variables X,Y;reel
+debut
+    ecrire("saisir les coordonnées X et Y d’un point: ")
+    ecrire("saisir X: ")
+    lire(X)
+    ecrire("sasir Y: ")
+    lire(Y)
+    si X>0 et Y>0 alors 
+        ecrire("le point se trouve dans la parie A du plan.")
+    sinon si X>0 et Y<0 alors 
+        ecrire("le point se trouve dans la parie D du plan.")
+    sinon si X<0 et Y>0 alors 
+        ecrire("le point se trouve dans la parie B du plan.")
+    sinon si X<0 et Y<0 alors 
+        ecrire("le point se trouve dans la parie A du plan.")
+    sinon
+        ecrire("le point est le centre du plan.")
+    finsi
+fin
