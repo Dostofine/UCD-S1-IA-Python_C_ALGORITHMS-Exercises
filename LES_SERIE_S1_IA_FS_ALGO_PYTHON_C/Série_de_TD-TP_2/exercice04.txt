@@ -1,0 +1,15 @@
+Exercice 4
+Ecrire un algorithme qui demande trois noms à l’utilisateur et l’informe ensuite s’ils sont
+rangés ou non dans l’ordre alphabétique.
+==========================================================================================
+        algorithme_ordre_alphabétique
+variables nom1,nom2,nom3:chaine de caracteres
+debut
+    ecrire("saisir 3 nomes: ")
+    lire(nom1,nom2,nom3)
+    si nom1<nom2 et nom2<nom3 alors
+        ecrire("les 3 noms sont rangés dans l’ordre alphabétique.")
+    sinon
+        ecrire("les 3 noms sont pas rangés dans l’ordre alphabétique.")
+    finsi
+fin
