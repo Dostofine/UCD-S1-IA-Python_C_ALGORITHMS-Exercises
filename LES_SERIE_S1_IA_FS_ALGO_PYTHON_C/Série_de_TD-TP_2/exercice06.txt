@@ -1,0 +1,17 @@
+Exercice 6
+Ecrire un algorithme qui permet de lire deux nombres et affiche un message indiquant si ces
+deux nombres sont ordonnées par ordre croissant ou décroissant ou sont identiques.
+===============================================================
+            algorithme_l'ordre_deux_deux_nombres
+variables N1, N2:reel
+debut
+    ecrire("saisir deux nombre N1 et N2: ")
+    lire(N1,N2)
+    si N1<N2 alors 
+        ecrire("les deux nombres sont ordonnées par ordre croissant.")
+    sinon si N1>N2 alors
+        ecrire("les deux nombres sont ordonnées par ordre décroissant.")
+    sinon
+         ecrire("les deux nombres sont identiques.")
+    fin si 
+fin
