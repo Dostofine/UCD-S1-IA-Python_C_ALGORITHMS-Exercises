@@ -1,0 +1,27 @@
+Exercice 8
+Cet algorithme est destiné à prédire l'avenir
+Il lira au clavier l’heure et les minutes, et il affichera l’heure qu’il sera une minute plus tard.
+Par exemple, si l'utilisateur tape 21 puis 32, l'algorithme doit répondre :
+"Dans une minute, il sera 21 heure(s) 33".
+NB : on suppose que l'utilisateur entre une heure valide. Pas besoin donc de la vérifier.
+==============================================================
+        algorithme_exercice08
+variales H,MIN:entier
+debut 
+    ecrire("saisir le nombre des heures: ")
+    lire(H)
+    ecrire("saisir le nombre des minutes: ")
+    lire(MIN)
+    si min<59 alors
+        MIN<-MIN+1
+    sinon si min=59 alors 
+        si H<23 alors 
+            MIN<-0
+            H<-H+1
+        sinon si H=23 alors 
+            H<-0
+            MIN<-0 
+        fin si 
+    fin si 
+    ecrire("Dans une minute, il sera ",H," heure(s) ",MIN,")
+fin 
