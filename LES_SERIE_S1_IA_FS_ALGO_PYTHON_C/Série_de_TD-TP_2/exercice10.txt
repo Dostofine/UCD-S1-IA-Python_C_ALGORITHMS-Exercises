@@ -1,0 +1,31 @@
+Exercice 10
+Ecrire un programme calculatrice permettant la saisie de deux entiers et une opération ( +, - ,
+/ , * ) et affichant le résultat.
+=========================================================
+        algorithme_calculatrice
+variables N1,N2,solution:reel 
+          op:charactere 
+debut
+    ecrire("saisir deux nombres N1 et N2 : ")
+    lire(N1,N2)
+    ecrire("saisir une opération ( +, - , / , * ): ")
+    lire(op)
+    si op = '+' alors 
+        solution<-N1+N2
+        ecrire(N1," + ",N2," = ",solution)
+    sinon si op = '-' alors 
+        solution<-N1+N2
+        ecrire(N1," - ",N2," = ",solution)
+    sinon si op = '*' alors 
+        solution<-N1+N2
+        ecrire(N1," * ",N2," = ",solution)
+    si op = '/' alors 
+        si N2 != 0 alors 
+            solution<-N1/N2
+            ecrire(N1," / ",N2," = ",solution)
+        sinon
+            ecrire("math error!)
+    sinon
+        ecrire("invalide choix.")
+    finsi 
+fin
