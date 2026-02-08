@@ -1,0 +1,17 @@
+Exercice 11
+À partir d’un montant lu, on détermine un montant net par application d’une remise de :
+- 1% si le montant est compris entre 2000 et 5000 Dhs (valeurs comprises).
+- 2 % si le montant est supérieur à 5000 Dhs.
+============================================================
+        algorithme_remise
+variables m:reel 
+debut
+    ecrire("saisir le montant: ")
+    lire(m)
+    si m<=5000 et m>=2000 alors 
+        m<-m-m*0.01 
+    sinon si m>5000 alors 
+        m<-m-m*0.02
+    fin si 
+    ecrire("le montant net est: ",m)
+fin
