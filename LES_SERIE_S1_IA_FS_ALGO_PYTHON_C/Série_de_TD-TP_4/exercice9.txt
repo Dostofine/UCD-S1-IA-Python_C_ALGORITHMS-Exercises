@@ -1,0 +1,9 @@
+Exercice 9
+Soit T un tableau à deux dimensions de vingt lignes et quinze colonnes (Matrice). Ecrire un
+algorithme qui permet de :
+- Calculer la somme de tous les éléments de la matrice.
+- Compter le nombre des éléments strictement positifs.
+- Calculer la somme des éléments positifs (SomP) et la somme des éléments négatifs
+(SomN) de la matrice.
+- Déterminer le plus grand élément de la matrice, ainsi que sa position.
+- Déterminer le plus petit élément de la matrice, ainsi que sa position.

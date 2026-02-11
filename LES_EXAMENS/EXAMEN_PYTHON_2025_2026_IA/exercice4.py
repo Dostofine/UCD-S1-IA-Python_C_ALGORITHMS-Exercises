@@ -6,19 +6,15 @@ for i in range(0,40):
             break
         else:
             print(f"la note {T[i]} pas entre 0 et 20!.")
-verifier=True
 while True:
+    verifier=True
     for i in range(0,39):
         if T[i]<T[i+1]:
-            verifier=False
-    if verifier==False:
-        for i in range(0,39):
-            if T[i]<T[i+1]:
                 temp=T[i]
                 T[i]=T[i+1]
                 T[i+1]=temp
-        verifier=True
-    else:
+                verifier=False
+    if verifier==True:
         break
 for i in range(0,40):
     print(f"la note numero {i+1}: {T[i]}.")

@@ -7,7 +7,7 @@ int main(){
         scanf("%d",&N);
     }while(N<=0);
     S=0;
-    for(int i=0;i<N;i++){
+    for(int i=1;i<=N;i++){
         S=S+pow((i+1), (i+1));
     }
     printf("S=%d\n",S);
