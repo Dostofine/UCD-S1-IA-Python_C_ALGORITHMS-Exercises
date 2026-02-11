@@ -1,0 +1,18 @@
+        algorithme_logiciel_epicier 
+variables prix,S,M:reel 
+          i:entier 
+debut 
+S<-0
+i<-0
+faire
+    ecrire("saisir un prix: ")
+    lire(prix)
+    i<-i+1
+    si prix!=0 alors
+        S<-S+prix 
+    sinon 
+        ecrire("Merci d'utiliser ce logiciel." )
+tant que(prix!=0)
+M<-S/(i-1)
+ecrire("la somme est : ",S)
+ecrire("le moyenne est : ",M)

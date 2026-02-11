@@ -1,0 +1,13 @@
+        algorithme_sommation
+variables N,S,i:entier 
+debut
+    S<-0
+    faire
+        ecrire("saisir l'entier N>0: ")
+        lire(N)
+    tant que(N<=0)
+    pour i allant de 1 a N alors 
+        S<-S+i^i
+    fin pour 
+    ecrire("S=",S)
+fin

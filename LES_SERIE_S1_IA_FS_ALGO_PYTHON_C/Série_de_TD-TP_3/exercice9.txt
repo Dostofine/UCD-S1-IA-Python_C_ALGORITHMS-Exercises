@@ -1,0 +1,4 @@
+Exercice 9 :
+Ecrire un algorithme qui lit dans une boucle Répéter Jusqu’à des entiers tant qu’on ne donne pas
+un nombre négatif et affiche le nombre d’entiers pairs, le nombre d’entiers impairs ainsi que le
+nombre total d’entiers saisis.

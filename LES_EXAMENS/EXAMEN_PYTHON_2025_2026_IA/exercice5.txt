@@ -1,0 +1,42 @@
+        algorithme_Tableau_2D
+variables i,j:entier
+          M[3][3]:reel
+          N[3][3]:reel
+          G[3][3]:reel
+debut
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            ecrire("saisir la valeur de mateice M case ",i," ",j)
+            lire(M[i][j])
+        fin pour
+    fin pour 
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            ecrire("saisir la valeur de mateice N case ",i," ",j)
+            lire(N[i][j])
+        fin pour
+    fin pour 
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            G[i][j]<-M[i][j]+N[i][j]
+        fin pour
+    fin pour
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            ecrire(M[i][j]," ")
+        fin pour
+        ecrire("\n")
+    fin pour   
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            ecrire(N[i][j]," ")
+        fin pour
+        ecrire("\n")
+    fin pour 
+    pour i allant de 1 a 3 alors 
+        pour j allant de 1 a 3 alors 
+            ecrire(G[i][j]," ")
+        fin pour
+        ecrire("\n")
+    fin pour  
+fin

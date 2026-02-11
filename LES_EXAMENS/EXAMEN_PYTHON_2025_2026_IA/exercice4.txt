@@ -5,23 +5,21 @@ variables i:entier
           Tableau T[40]:reel
 debut
     pour i allant de 1 a 40 faire
-        ecrire("saisir la note numero ",i)
-        lire(T[i])
+        repeter
+            ecrire("saisir la note numero ",i)
+            lire(T[i])
+        jusqu'a (T[i]>=0 et T[i]<=20)
     fin pour
     faire
         verifier<-vrai 
         pour i allant de 1 a 39 faire
             si T[i]<T[i+1] alors
-                verifier<-faux 
-            fin si 
-        fin pour 
-        si verifier=faux 
-            pour i allant de 1 a 39 faire 
                 temp<-T[i]
                 T[i]<-T[i+1]
                 T[i+1]<-temp
-            fin pour 
-        fin si 
+                verifier<-faux 
+            fin si 
+        fin pour 
     tant que(verifier=faux)
     pour i allant de 1 a 40 faire 
         si T[i]>=16 alors 
