@@ -1,0 +1,14 @@
+            algorithme_sommation
+variables n,i:entier 
+          X,S:reel
+debut
+    repeter
+        ecrire("saisir un entier n>0: ")
+        lire(n)
+    jusqu'a (n>0)
+    ecrire("saisir un reel X: ")
+    lire(X)
+    S<-0
+    pour i allant de 1 a n faire 
+        S<-S+n*X^n
+ecrire("la somme S=",S)

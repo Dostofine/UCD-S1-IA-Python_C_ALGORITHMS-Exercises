@@ -14,7 +14,7 @@ for i in range(0,3):
     for j in range(0,3):
         G[i][j]=M[i][j]+N[i][j]
 #affiche les matrices sur l'ecran
-for i in range(0,3):
+for i in range(0,3):          
     for j in range(0,3):
         print(f" {M[i][j]} ",end="")
     print("")

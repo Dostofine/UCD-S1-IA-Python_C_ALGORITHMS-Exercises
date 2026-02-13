@@ -1,0 +1,14 @@
+        algorithme_les_nombres_armsstrong
+variables i,j,l,nombre:entier
+debut
+    pour i allant de 1 a 9 faire 
+        pour j allant de 0 a 9 faire 
+            pour l allant de 0 a 9 faire
+                nombre=i*100+j*10+l
+                si (i^3+j^3+l^3=nombre) alors
+                    ecrire(nombre)
+                finsi
+            finpour
+        finpour
+    finpour
+fin

@@ -1,0 +1,30 @@
+        algorithme_facultatif
+variables i,j,somme:entier
+          Tableau T[10][10]:entier 
+debut 
+    somme<-0
+    pour i allant de 1 a 10 faire 
+        pour j allantde 1 a 10 faire
+            ecrire("saisir la case",i," ",j)
+            lire(T[i][j])
+        fin pour 
+    fin pour
+    //calcule et affich la somme des lignes
+    ecrire("la somme des lignes.")
+    pour i allant de 1 a 10 faire 
+        pour j allantde 1 a 10 faire
+            somme<-somme+T[i][j]
+        fin pour
+        ecrire(somme)
+        somme<-0
+    fin pour
+    //calcule et affich la somme des colonnes
+    ecrire("la somme des colonnes.")
+    pour j allant de 1 a 10 faire 
+        pour i allantde 1 a 10 faire
+            somme<-produit+T[i][j]
+        fin pour
+        ecrire(somme)
+        somme<-0        
+    fin pour
+fin

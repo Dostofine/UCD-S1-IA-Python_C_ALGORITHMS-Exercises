@@ -1,0 +1,20 @@
+        algorithme_suite
+variables i,a,n,U0,Ui_1,Ui:entier
+debut
+    repeter
+        ecrire("saisir un entier n>=0: ")
+        lire(n)
+    jusqu'a (n>=0)
+    repeter
+        ecrire("saisir un entier a!=0: ")
+        lire(a)
+    jusqu'a (a!=0)
+    U0<-a
+    Ui_1<-U0
+    ecrire(U0)
+    pour i allant de 1 a n faire 
+        Ui<-7*(Ui_1+a)
+        ecrire(Ui)
+        Ui_1<-Ui
+    fin pour 
+fin

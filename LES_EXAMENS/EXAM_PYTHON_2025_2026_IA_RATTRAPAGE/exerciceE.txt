@@ -1,0 +1,17 @@
+        algorithme_tableau_1D_et_chaine_de_caracteres
+variables i,j,taille,conteur_voyelles:entier 
+          chaine:chaine de caractere
+          Tableau les_voyelles=[a,e,i,o,u,y]:caractere
+debut
+    ecrire("saisir une chaine de caracteres: ")
+    lire(chaine)
+    taille=longeure(chaine)
+    pour i allant de 1 a taille faire 
+        pour j allantde 1 a 6 faire
+            si chaine[i]=les_voyelles[j] alors
+                conteur_voyelles=conteur_voyelles+1
+            fin si 
+        fin pour
+    fin pour 
+    ecrire("le nombre des voyelles est: ",conteur_voyelles)
+fin 
