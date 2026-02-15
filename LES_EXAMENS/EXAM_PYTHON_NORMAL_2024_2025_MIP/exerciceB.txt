@@ -1,0 +1,12 @@
+        algorithme_permetation
+variables X,Y,Z:entier
+debut
+    ecrire("saisir deux entier X et Y : ")
+    lire(X,Y)
+    Z<-X
+    X<-Y
+    Y<-Z
+    ecrire("apres la permetation.")
+    ecrire("X=",X)
+    ecrire("Y=",Y)
+fin

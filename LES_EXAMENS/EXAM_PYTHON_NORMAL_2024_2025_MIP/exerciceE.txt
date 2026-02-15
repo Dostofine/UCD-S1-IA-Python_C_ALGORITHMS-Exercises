@@ -1,0 +1,27 @@
+        algorithme_tableau_1D
+variables i,temp:entier 
+          verifier:boolean
+          Tableau T[10]:entier 
+debut 
+    pour i allant de 1 a 10 faire 
+        ecrire("saisir l'entier numero ",i,": ")
+        lire(T[i])
+    fin pour 
+    faire
+        verifier<-vrai 
+        pour i allant de 1 a 9 faire
+            si T[i]>T[i+1] alors 
+                temp<-T[i]
+                T[i]<-T[i+1]
+                T[i+1]<-temp 
+                verifier<-faux
+            fin si
+        fin pour
+    tant que (verifier=faux)
+    pour  i allant de 1 a 10 faire
+        si T[i]!=0 alors 
+            ecrire(T[i])
+        fin si
+    fin pour 
+fin
+

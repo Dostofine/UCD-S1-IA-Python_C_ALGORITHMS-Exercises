@@ -1,0 +1,17 @@
+        algorithme_Tableau_2D
+variables i,j:entier 
+          Tableau M[3][3]:entier
+debut
+    pour i allant de 1 a 3 faire 
+        pour j allant de 1 a 3 faire  
+            ecrire("saisir la case : ",i," ",j,": ")
+            lire(M[i][j])
+        fin pour 
+    fin pour
+    pour i allant de 1 a 3 faire 
+        pour j allant de 1 a 3 faire  
+            ecrire(" ",M[j][i]," ")
+        fin pour 
+        ecrire("")
+    fin pour
+fin 

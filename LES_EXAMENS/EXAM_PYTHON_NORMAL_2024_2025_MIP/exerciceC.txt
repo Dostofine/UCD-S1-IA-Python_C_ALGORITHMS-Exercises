@@ -1,0 +1,13 @@
+        algorithme_sommation
+variables S,N,i:entier
+debut 
+    repeter
+        ecrire("saisir un entier N>0: ")
+        lire(N)
+    jusqu'a(N>0)
+    S<-0
+    pour i allant de 1 a N faire 
+        S<-S+i^2
+    fin pour 
+    ecrire("S=",s)
+fin
