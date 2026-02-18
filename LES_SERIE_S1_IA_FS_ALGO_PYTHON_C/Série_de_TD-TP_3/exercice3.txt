@@ -1,0 +1,31 @@
+Ecrire un algorithme qui demande successivement 6 nombres à l’utilisateur, et qui affiche ensuite
+le plus grand parmi ces 6 nombres et aussi son rang :
+Par exemple :
+Entrez le nombre numéro 1 : 12
+Entrez le nombre numéro 2 : 14
+Entrez le nombre numéro 3 : 6
+Entrez le nombre numéro 4 : 1
+Entrez le nombre numéro 5 : 4
+Entrez le nombre numéro 6 : 2
+Le plus grand de ces nombres est : 14
+C’était le nombre numéro 2
+---------------------------------------------------------------
+        algorithme_max_nombre
+variables max,max_pos,i:entier
+          Tableau T[6]:entier
+debut 
+    pour i allant de 1 a 6 faire 
+        ecrire("saisir l'entier numéro ",i,": ")
+        lire(T[i])
+    fin pour 
+    max=T[0]
+    max_pos=0
+    pour i allant de 1 a 6 faire
+        si T[i]>max alors
+            max<-T[i]
+            max_pos<-i
+        fin si 
+    fin pour 
+    ecrire("Le plus grand de ces nombres est: ",max)
+    ecrire("C’était le nombre numéro: ",max_pos)
+fin

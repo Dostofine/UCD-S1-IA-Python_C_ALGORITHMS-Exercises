@@ -4,7 +4,7 @@ int nb,k;
 int tantque(){
     scanf("%d",&nb);
     k=1;
-    while(k!=nb){
+    while(k!=nb+1){
         printf("%d\n",k);
         k++;
     }
@@ -23,6 +23,7 @@ int repeter(){
     return 0;
 }
 int main(){
+    tantque();
     repeter();
     return 0;
 }

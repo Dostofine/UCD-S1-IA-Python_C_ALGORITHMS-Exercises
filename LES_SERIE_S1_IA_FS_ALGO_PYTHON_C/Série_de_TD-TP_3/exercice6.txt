@@ -1,0 +1,31 @@
+Exercice 6 :
+-
+ Ecrire un algorithme qui demande un nombre de départ, et qui ensuite affiche les dix
+nombres suivants. Par exemple, si l'utilisateur entre le nombre 17, le programme affichera les
+nombres de 18 à 27.
+-
+ Réécrire cet algorithme en utilisant la boucle Pour.
+ -----------------------------------------------------------
+        algorithme_dix_nombres_suivants_faire_tant_que
+variables N,i:entier
+debut 
+    ecrire("saisir un entier N: ")
+    lire(N)
+    i<-0
+    faire
+        N<-N+1
+        ecrire(N)
+        i<-i+1
+    tant que(i<10)
+fin
+---------------------------------------------
+        algorithme_dix_nombres_suivants_pour
+variables N,i:entier
+debut 
+    ecrire("saisir un entier N: ")
+    lire(N)
+    pour i allan de 1 a 10 faire 
+        N<-N+1
+        ecrire(N)
+    fin pour 
+fin

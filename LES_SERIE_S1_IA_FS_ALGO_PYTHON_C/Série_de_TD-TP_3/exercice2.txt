@@ -1,0 +1,35 @@
+Exercice 2
+Soit l’algorithme suivant :
+Variables A, B, C : entier
+Début
+    A<-0
+    Lire(B)
+    Répéter
+        Lire(C)
+        Si B = C alors 
+            A<-A+1 
+        Finsi
+    Jusqu’à (C< 0)
+    Ecrire (A)
+Fin
+---------------------------------------
+1-Que fait cet algorithme ?
+=>Cet algorithme compte combien de fois C est égal à B.
+2-Que représente A dans cet algorithme ?
+=>A est le compteur.
+3-Réécrire cet algorithme avec la boucle Tant Que.
+=>
+        algorithme_compteur
+Variables A, B, C : entier
+Début
+    A<-0
+    lire(B)
+    lire(C)
+    tant que C>0 faire 
+        si C=B alors 
+            A<-A+1
+        fin si
+        lire(C)
+    fin tant que
+    ecrire("A=",A)
+fin

@@ -1,0 +1,21 @@
+Exercice 4 :
+Ecrire un algorithme qui détermine si un entier N est parfait ou non. Un entier est dit parfait s'il
+est égal à la somme de ses diviseurs. Exemple 6 = 3 + 2 +1
+----------------------------------------
+        algorithme_nombre_parfait
+variables N,somme,i:entier
+debut
+    somme=0
+    ecrire("saisir un entier N: ")
+    lire(N)
+    pour i allant de 1 a N-1 faire
+        si (N%i)=0 alors
+            somme=somme+i
+        fin si 
+    fin pour 
+    si somme=N alors 
+        ecrire("le nombre ",N,"est parfait.")
+    sinon
+        ecrire("le nombre ",N,"pas parfait.")
+    fin si 
+fin
