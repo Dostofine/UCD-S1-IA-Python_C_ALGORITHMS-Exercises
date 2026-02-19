@@ -2,3 +2,23 @@ Exercice 9 :
 Ecrire un algorithme qui lit dans une boucle Répéter Jusqu’à des entiers tant qu’on ne donne pas
 un nombre négatif et affiche le nombre d’entiers pairs, le nombre d’entiers impairs ainsi que le
 nombre total d’entiers saisis.
+----------------------------------------------------------------
+            algorithme_exercice9
+variables N_pair,N_impair,N_total,N:entier 
+debut
+    repeter
+        ecrire("saisir un nombre entier positif: ")
+        lire(N)
+        si (N>=0) alors
+            N_total=N_total+1
+            si (N%2)=0 alors 
+                N_pair=N_pair+1
+            sinon
+                N_impair=N_impair+1
+            fin si 
+        fin si
+    jusqu'a (N<0)
+    ecrire("le nombre total d’entiers saisis est ",N_total)
+    ecrire("le nombre d’entiers pairs est ",N_pair)
+    ecrire(" le nombre d’entiers impairs est ",N_impair)
+fin

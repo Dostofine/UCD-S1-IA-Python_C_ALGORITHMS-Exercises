@@ -1,0 +1,27 @@
+Exercice 7 :
+Ecrire un algorithme qui demande successivement des nombres à l’utilisateur, et qui lui dise
+ensuite quel était le plus grand parmi ces nombres et quel était sa position. La saisie des nombres
+s’arrête lorsque l’utilisateur entre un zéro.
+-----------------------------------------------------------
+        algorithme_max_et_maxpos
+variables i,j,max_pos:entier 
+          max:reel
+          Tableau T[1000]:reel  
+debut
+    i<-0
+    faire
+        i<-i+1
+        ecrire("saisir le nombre numero: ",i)
+        lire(T[i])
+    tant que(i<1000 et T[i]!=0)
+    max<-T[1]
+    max_pos<-0
+    pour j allant de 1 a i faire 
+        si T[j]>=max alors 
+            max<-T[j]
+            max_pos<-j
+        fin si 
+    fin pour 
+    ecrire("le plus grand parmi ces nombres est: ",max)
+    ecrire("et sa position est: ",max_pos)
+fin

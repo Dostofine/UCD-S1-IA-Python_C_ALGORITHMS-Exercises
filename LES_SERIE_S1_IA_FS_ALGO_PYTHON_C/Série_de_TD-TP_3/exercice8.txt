@@ -1,0 +1,20 @@
+Exercice 8 :
+Ecrire un algorithme qui demande successivement des nombres à l’utilisateur, et qui calcule le
+nombre de valeurs saisies. La saisie des nombres s’arrête lorsque l’utilisateur entre la chaine de
+caractères “non“ ou “Non“.
+---------------------------------------------------------------------
+        algorithme_demande_des_nombres
+variables user_choice:chaine de caractères 
+          N:reel
+          N_saisies:entier
+debut
+    N_saisies<-0
+    repeter
+        ecrire("saisir un nombre: ")
+        lire(N)
+        N_saisies<-N_saisies+1
+        ecrire("saisir oui pour saisir un nombre et non ou Non pour quite.")
+        lire(user_choice)
+    jusqu'a (user_choice='non' ou user_choice='Non')
+    ecrire("le nombre de valeurs saisies est: ",N_saisies)
+fin

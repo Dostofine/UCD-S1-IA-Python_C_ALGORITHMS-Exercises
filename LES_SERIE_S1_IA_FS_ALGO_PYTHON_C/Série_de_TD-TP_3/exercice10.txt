@@ -1,0 +1,29 @@
+Ecrire un algorithme qui lit les caractères saisies par l’utilisateur. A la fin, il nous affichera la
+phrase saisie. La saisie des caractères s’arrête lorsqu’on tape point « . ». Si l’utilisateur veut insérer
+un espace, il lui suffit de tapez 0.
+Par exemple si l’utilisateur tape successivement les caractères « b » , « o », « n », « j », « o », « u », «
+r » , « t », « o », « u », « s », « . » , il nous affichera la chaîne « bonjourtous ».
+Mais si il tape « b », « o », « n », « j », « o », « u », « r » , « 0 », « t », « o », « u », « s », « . » , le
+programme affichera « bonjour tous ».
+-------------------------------------------------------------------
+            algorithme_phrase_par_caracteres
+variables c:caractere
+          i:entier
+          chaine:chaine de caractere 
+debut
+    chaine<-""
+    i<-1
+    faire
+        ecrire("saisir le caractere ",i)
+        lire(c)
+        si c!='.' alors 
+            si c='0' alors 
+                chaine<-chaine+" "
+            sinon
+                chaine<-chaine+c 
+            fin si 
+        fin si 
+    tant que(c!='.')
+    ecrire("la chaine est ",chaine)
+fin
+        
