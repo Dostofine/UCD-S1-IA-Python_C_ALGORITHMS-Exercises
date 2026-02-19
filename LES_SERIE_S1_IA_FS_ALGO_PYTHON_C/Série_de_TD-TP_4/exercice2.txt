@@ -1,0 +1,23 @@
+Exercice 2
+Soit T un tableau de 30 entiers. Ecrire l’algorithme qui détermine le plus petit élément de ce
+tableau et sa position.
+-----------------------------------------------------------------------
+        algorithme_min_et_min_pos_d'un_tableau
+variables min,min_pos,i:entier
+          Tableau T[30]:entier 
+debut 
+    pour i allant de 1 a 30 faire 
+        ecrire("saisir l'entier numero ",i," : ")
+        lire(T[i])
+    fin pour
+    min<-T[1]
+    pour i allant de 1 a 30 faire 
+        si T[i]<min alors 
+            min<-T[i]
+            min_pos<-i
+        fin si 
+    fin pour 
+    ecrire("le plus petit élément de ce tableau est : ",min)
+    ecrire("et sa position est ",min_pos)
+fin
+

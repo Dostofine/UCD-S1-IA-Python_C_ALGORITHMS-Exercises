@@ -1,0 +1,17 @@
+Exercice 1
+Soit T un tableau de vingt éléments de type réel. Ecrire l’algorithme qui permet de saisir les
+éléments de ce tableau et de calculer la somme de ses éléments.
+------------------------------------------------------------
+        algorithme_tableau_20_elements 
+variables somme:reel 
+          i:entier 
+          T[20]:reel 
+debut
+    somme<-0
+    pour i allant de 1 a 20 faire 
+        ecrire("saisir le nombre numero ",i)
+        lire(T[i])
+        somme<-somme+T[i]
+    fin pour 
+    ecrire("la somme est : ",somme)
+fin
