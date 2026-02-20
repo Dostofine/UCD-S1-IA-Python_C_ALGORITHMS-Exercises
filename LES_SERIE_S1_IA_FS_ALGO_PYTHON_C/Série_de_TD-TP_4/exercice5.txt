@@ -1,0 +1,29 @@
+Exercice 5
+Ecrire un algorithme qui permet de lire un tableau d’entiers de taille 10 et à l’aide d’une seule
+boucle Pour, affiche le minimum de la 1ère moitié de ce tableau et le maximum de sa 2ème
+moitié.
+--------------------------------------
+        algorithme_tableau_taille_10
+variables min,max,i:entier
+          Tableau T[10]:entier
+debut 
+    pour i allant de 1 a 10 faire 
+        ecrire("saisir l'entier ",i)
+        lire(T[i])
+    fin pour 
+    min<-T[1]
+    max=T[6]
+    pour i allant de 1 a 10 faire 
+        si i<=5 alors 
+            si T[i]<min alors 
+                min<-T[i]
+            fin si 
+        sinon
+            si T[i]>max alors 
+                max<-T[i]
+            fin si 
+        fin si 
+    fin pour 
+    ecrire("le minimum de la 1ère moitié : ",min)
+    ecrire("le maximum de sa 2ème moitié : ",max)
+fin

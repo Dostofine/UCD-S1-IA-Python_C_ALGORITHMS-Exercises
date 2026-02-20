@@ -1,0 +1,23 @@
+Exercice 3
+Ecrire un algorithme qui saisit 10 caractères dans un tableau. Puis, calcule le nombre de
+majuscules et le nombre de lettres dans ce tableau. Un caractère n’est pas forcément une lettre :
+ça peut être un chiffre, un signe de ponctuation ou un caractère spécial.
+------------------------------------------------------
+        algorithme_10_caracteres 
+variables i,N_maj,N_let:entier 
+          Tableau T[10]:caractere 
+debut 
+    N_maj<-0
+    N_let<-0
+    pour i allant de 1 a 10 faire 
+        ecrire("saisir le caractere ",i)
+        lire(T[i])
+        si T[i]<='Z' et T[i]>='A' alors 
+            N_maj=N_maj+1
+        sinon si T[i]<='z' et T[i]>='a' alors 
+            N_let=N_let+1 
+        fin si 
+    fin pour 
+    ecrire("le nombre de majuscules est : ",N_maj)
+    ecrire("le nombre de lettres est : ",N_let)
+fin 

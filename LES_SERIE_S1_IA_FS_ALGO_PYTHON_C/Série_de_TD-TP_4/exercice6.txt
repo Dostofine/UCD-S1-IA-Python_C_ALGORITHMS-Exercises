@@ -1,0 +1,28 @@
+Exercice 6
+Ecrire un algorithme qui cherche dans un tableau non trié si un nombre x existe au moins une
+fois.
+--------------------------------------------------------
+        algorithme_cherche_dans_un_tableau 
+vriables X:reel 
+         verifier:boolean
+         i:entier 
+         Tableau T[10]:reel 
+debut 
+    pour i allant de 1 a 10 faire 
+        ecrire("saisir le nombre ",i," : ")
+        lire(T[i])
+    fin pour 
+    ecrire("saisir un nombre pour cherche: ")
+    lire(X)
+    verifier<-faux
+    pour i allant de 1 a 10 faire 
+        si X=T[i] alors 
+            verifier<-vrai 
+        fin si 
+    fin pour
+    si verifier=vrai alors 
+        ecrire(X,"  existe au moins une fois.")
+    sinon
+        ecrire(X," n'existe pas dant le tableau.")
+    fin si 
+fin

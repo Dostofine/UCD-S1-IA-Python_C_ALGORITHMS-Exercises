@@ -1,0 +1,40 @@
+Exercice 4
+Ecrire un algorithme qui permet à l’utilisateur de saisir les notes d'une classe de 40 élèves.
+Ensuite, renvoie le nombre des notes supérieures strictement à la moyenne de la classe et enfin
+calcule le nombre d’occurrence de la note maximale.
+-----------------------------------------------------
+        algorithme_les_notes_d_une_classe
+variables NotesS_M,moyenne,somme,C_max,i:entier 
+          max:reel 
+          Tableau T[40]:reel 
+debut
+    somme<-0
+    pour i allant de 1 a 40 faire 
+        ecrire("saisir la note ",i," : ")
+        lire(T[i])
+        somme<-somme+T[i]
+    fin pour 
+    moyenne<-somme/40
+    NotesS_M<-0
+    max<-T[1]
+    pour i allant de 1 a 40 faire
+        si T[i]>max alors 
+            max<-T[i]
+        fin si 
+        si T[i]>moyenne alors 
+            NotesS_M<-NotesS_M+1
+        fin si
+    fin pour 
+    C_max<-0
+    pour i allant de 1 a 40 faire
+        si T[i]=max alors 
+            C_max=C_max+1
+        fin si 
+    fin pour 
+    ecrire("le nombre des notes supérieures strictement à la moyenne de la classe est ",NotesS_M)
+    ecrire("le nombre d’occurrence de la note maximale est ",C_max)
+fin
+
+
+
+
