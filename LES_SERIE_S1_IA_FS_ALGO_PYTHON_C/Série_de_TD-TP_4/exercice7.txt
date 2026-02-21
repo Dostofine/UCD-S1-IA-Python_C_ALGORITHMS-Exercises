@@ -1,0 +1,47 @@
+Exercice 7
+Soient deux vecteurs (tableaux) U et V ayant N composantes entières saisies au clavier.
+Ecrire algorithme permettant de :
+1. Calculer le vecteur somme de U et V.
+2. Calculer le produit cartésien de U et V.
+3. Calculer le produit scalaire de U et V.
+------------------------------------------------------------
+        algorithme_deux_vecteurs
+variables N,i,j,produit_sca:entier
+          Tablaeu U[100],V[100]:entier 
+debut
+    //lire N
+    faire
+        ecrire("saisir le nombre N<100 des composantes de les deux vecteur : ")
+        lire(N)
+    tant que(N>=100 ou N<1)
+    //lire les composantes de U et V 
+    pour i allant de 1 a N faire
+        ecrire("saisir le composant ",i," de la vecteur U: ")
+        lire(U[i])
+        ecrire("saisir le composant ",i," de la vecteur V: ")
+        lire(V[i])
+    fin pour 
+    //Calculer le vecteur somme de U et V.
+    ecrire("le vecteur somme de U et V: ")
+    pour i allant de 1 a N faire 
+        ecrire(U[i]+V[i])
+    fin pour 
+    //Calculer le produit scalaire de U et V.
+    ecrire("le produit scalaire de U et V: ")
+    produit_sca<-0
+    pour i allant de 1 a N faire 
+        produit_sca<-produit_sca+U[i]*V[i]
+    fin pour 
+    ecrire(produit_sca)
+    //Calculer le produit cartésien de U et V.
+    ecrire("le produit cartésien de U et V")
+    pour i allant de 1 N faire 
+        pour j allant de 1 a N 
+            ecrire("(",U[i],",",V[j],")")
+        fin pour 
+    fin pour 
+fin
+
+
+
+

@@ -1,0 +1,36 @@
+Exercice 8
+Etant donnée un tableau T de n entiers, écrire un algorithme permettant d'inverser le tableau.
+C.à.d. le premier élément devient le dernier, le deuxième devient l’avant dernier et ainsi de suite.
+-------------------------------------------------------------
+        algorithme_inverser_un_tableau 
+variables n,i,j,N,temp:entier 
+          Tableau T[100]:entier 
+debut 
+    faire
+        ecrire("saisir la taille de tableau n<100: ")
+        lire(n)
+    tant que(n>=100 ou n<1)
+    pour i allant de 1 a n faire 
+        ecrire("saisir l'entier numero ",i," : ")
+        lire(T[i])
+    fin pour 
+    //affiche le tableau avant d'inverser
+    ecrire("le tableau avant d'inverser: ") 
+    pour i allant de 1 a n faire 
+        ecrire(T[i])
+    fin pour 
+    //inverser et affiche 
+    N<-n-1
+    pour i allant de 1 a n faire 
+        pour j allant de 1 a N faire 
+            temp<-T[j]
+            T[j]<-T[j+1]
+            T[j+1]<-temp
+        fin pour 
+        N=N-1
+    fin pour 
+    ecrire(" le tableau apres d'inverser: ")
+    pour i allant de 1 a n faire 
+        ecrire(T[i])
+    fin pour 
+fin
