@@ -7,3 +7,51 @@ algorithme qui permet de :
 (SomN) de la matrice.
 - Déterminer le plus grand élément de la matrice, ainsi que sa position.
 - Déterminer le plus petit élément de la matrice, ainsi que sa position.
+---------------------------------------
+        algorithme_tableau_deu_dimensions 
+variables somme,somP,somN,max,min:reel 
+          N_total_elements_S_positif,i,j:entier
+          max_pos,min_pos:chaine de caracteres
+          Tableau M[20][15]:reel
+debut
+    N_total_elements<-0
+    somme<-0
+    N_total_elements_S_positif<-0
+    somP<-0
+    somN<-0
+    pour i allant de 1 a 20 faire
+        pour j allant de 1 a 15 faire 
+            ecrire(""saisir l'element de case numero : {",i," , ",j,"} : ")
+            lire(M[i][j])
+            somme<-somme+M[i][j]
+            N_total_elements=N_total_elements+1
+            si M[i][j] > 0 alors 
+                somP<-SomP+M[i][j]
+                N_total_elements_S_positif<-N_total_elements_S_positif+1
+            sinon 
+                somN<-somN+M[i][j]
+        fin pour 
+    fin pour
+    max<-M[1][1]
+    min<-M[1][1]
+    pour i allant de 1 a 20 faire
+        pour j allant de 1 a 15 faire
+            si(M[i][j]>max) alors 
+                max<-M[i][j]
+                max_pos<-"{ ",i," , ",j," }"
+            fin si 
+            si(M[i][j]<min) alors 
+                min<-M[i][j]
+                min_pos<-"{ ",i," , ",j," }"
+            fin si
+        fin pour 
+    fin pour 
+    ecrire("la somme de tous les éléments de la matrice est: ",somme)
+    ecrire("le nombre des éléments strictement positifs est: ",elements_s_positif)
+    ecrire("la somme des éléments positifs (SomP) est: ",somP)
+    ecrire("la somme des éléments négatifs(SomN): ",somN)
+    ecrire("le plus grand élément de la matrice ",max)
+    ecrire("ainsi que sa position est ",pos_max)
+    ecrire("le plus petit élément de la matrice ",min)
+    ecrire("ainsi que sa position est ",pos min)
+fin
