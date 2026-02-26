@@ -1,0 +1,41 @@
+D- Nombres entiers triangulaires
+On appelle un nombreentier triangulaire N s'il existe un nombreentier n tel que N=n*(n+/2.
+Exemple:10= 4*(4+1)/2 donc 10 est un nombre triangulaire.
+5) Ecrire un algorithme qui permet de calculer tous les nombres entiers triangulaire N pour n allant
+de 0à 100, et les affiche à l'écran.
+6) Ecrire un autre algorithme qui permet de demander àl'utilisateur un nombreentier N (inferieur
+à 100) et vérifie si N est un nombre triangulaire ou pas et affiche le résultat àl'écran.
+-------------------------------------------------
+        algorithme_tous_les_entiers_triangulaires_entre_0_et_100
+variables n:entier 
+debut
+    ecrire("tous les nombres entiers triangulaire N pour n allant de 0 à 100 est : ")
+    pour n allant de 0 a 100 faire
+        ecrire((n*(n+1))/2)
+    fin pour 
+fin 
+-------------------------------------------------
+        algorithme_un_nombre_triangulaire
+variables N,i:entier 
+          verifier_N:boolean
+debut 
+    faire 
+        ecrire("saisir un nombre N<100: ")
+        lire(N)
+    tant que(N>=100 ou N<0)
+    verifier_N<-faux
+    pour i allant de 0 a 100 faire 
+        si(((n*(n+1))/2)=N) alors 
+            verifier_N<-vrai 
+        fin si 
+    fin pour 
+    si (verifier_N = vrai) alors
+        ecrire(N," est un nombre triangulaire")
+    sinon
+        ecrire(N," pas un nombre triangulaire")
+    fin si 
+fin
+
+
+
+
