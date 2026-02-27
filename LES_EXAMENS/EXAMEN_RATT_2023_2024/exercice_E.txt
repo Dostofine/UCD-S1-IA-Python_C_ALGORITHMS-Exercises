@@ -1,0 +1,52 @@
+E- Chaines de caractères
+7) Ecrire un algorithme qui lit 10 lettres différentes (alphabet en minuscule) les enregistre, ensuite il demande à l'utilisateur de rentrer 5 mots de différentes tailles constitués de ces 10 lettres, et
+enfin il affiche le plus long mot parmi les 5 et son nombre de caractères.
+Exemple:10 lettres :a,c,e,l,b,t,i,h,j,d - 1les mots bac, acide, taille, bit, chat -résultat :taille, 6
+--------------------------------------------------------------
+        algorithme_chaines_de_caracteres 
+variables max_taille,j,i,l,lettres_conteure:entier 
+          max_mot,mot[5]:chaine de caractere
+          T[10]:caractere
+          mot_taille[5]:entier
+debut 
+    pour i allnat de 1 a 10 faire
+        repeter
+            ecrire("saisir le caractere numero ",i," minuscule : ")
+            lire(T[i])
+        jusqu'a(T[i]<='z' et T[i]>='a')
+    fin pour 
+    pour i allant de 1 a 5 faire 
+        repeter 
+            lettres_conteure<-0
+            ecrire("saisir le mot ",i,": ")
+            lire(mot[i])
+            mot_taille[i]<-longueur(mot[i])
+            pour l allant de 1 a mot_taille faire 
+                pour j allant de  1 a 10 faire 
+                    si mot[i][l]=T[j] alors    
+                        lettres_conteure<-lettres_conteure+1
+                    fin si 
+                fin pour 
+            fin pour
+        jusqu'a(lettres_conteure=mot_taille[i])
+    fin pour
+    max_taille<-mot_taille[1]
+    max_mot<-mot[1]
+    pour i allant de 2 a 5 faire 
+        si(mot_taille[i]>max_taille) alors 
+            max_taille<-mot_taille[i]
+            max_mot<-mot[i]
+        fin si 
+    fin pour
+    ecrire("le plus long mot parmi les 5 et son nombre de caractères est ",max_mot," de taille ",max_taille)
+fin
+
+            
+                    
+
+
+
+
+                        
+        
+
